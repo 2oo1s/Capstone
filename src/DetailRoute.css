@@ -1,0 +1,86 @@
+.DetailRoute {
+  height: 40rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#left {
+  width: 22vw;
+  height: 31rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lTop{
+  @media (max-width: 1012px) {
+    .DayBtn button{
+      font-size: 0.9rem;
+      margin: 0rem 0.2rem 0.5rem 0.2rem;
+    }
+    #three{
+      width: 5vw;
+    }
+  }
+}
+.DayBtn button {
+  height: 2rem;
+  font-size: 1.1rem;
+  margin: 0rem 0.5rem 0.5rem 0.6rem;
+  border-radius: 0;
+  border: none;
+  padding: 0rem;
+}
+#one {
+  width: 11vw;
+}
+#two {
+  width: 9vw;
+}
+#three {
+  width: 5vw;
+}
+#lMiddle {
+  border-top: 1.2px solid #e2e2e2;
+  border-bottom: 1.2px solid #e2e2e2;
+  padding-top: 1rem;
+  width: 80%;
+}
+#lMiddle text {
+  padding-left: 0.2rem;
+  font-family: "sunflowerL";
+  font-size: 1.3rem;
+}
+.wordcloud{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+svg {
+  width: 18vw;
+  padding-top: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#right {
+  margin-top: 1rem;
+  width: 58vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1.2px solid #e2e2e2;
+}
+#map {
+  margin-top: 0rem;
+  width: 55vw;
+  height: 31rem;
+  border: 0.05rem solid rgba(0, 0, 0, 0.148);
+}
+
+.Route{
+  font-family: "sunflowerL";
+  margin-top: 0.5rem;
+}
