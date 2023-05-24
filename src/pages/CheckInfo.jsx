@@ -17,7 +17,7 @@ function CheckInfo() {
     startDate: null,
     endDate: null,
     times: { start: null, end: null },
-    car: null,
+    price: null,
     themes: [],
     location: null,
     with: null,
@@ -49,8 +49,8 @@ function CheckInfo() {
     });
   };
 
-  const handleCarSelect = (index) => {
-    handleSelect("car", index === selectedData.car ? null : index);
+  const handlePriceSelect = (e) => {
+    handleSelect("price", e.target.value);
   };
 
   const handleLocationSelect = (index) => {
@@ -103,7 +103,7 @@ function CheckInfo() {
       selectedData.startDate === null ||
       selectedData.times.start === null ||
       selectedData.times.end === null ||
-      selectedData.car === null ||
+      selectedData.price === null ||
       selectedData.themes.length === 0
     ) {
       const emptyData = [];
@@ -117,8 +117,8 @@ function CheckInfo() {
       if (selectedData.times.end === null) {
         emptyData.push("종료시간");
       }
-      if (selectedData.car === null) {
-        emptyData.push("이동수단");
+      if (selectedData.price === null) {
+        emptyData.push("숙소 가격");
       }
       if (selectedData.themes.length === 0) {
         emptyData.push("여행테마");
@@ -195,20 +195,14 @@ function CheckInfo() {
         </div>
       </div>
       <div className="Q">
-        <text>3. 이동수단으로 차를 이용하실 건가요?</text>
-        <span className="car">
-          <button
-            className={selectedData.car === "O" ? "selected" : ""}
-            onClick={() => handleCarSelect("O")}
-          >
-            O
-          </button>
-          <button
-            className={selectedData.car === "X" ? "selected" : ""}
-            onClick={() => handleCarSelect("X")}
-          >
-            X
-          </button>
+        <text>3. 숙소 1박의 가격대를 선택해주세요.</text>
+        <span className="price">
+          <select value={selectedData.price} onChange={handlePriceSelect}>
+            <option value={"5"}>5만원대</option>
+            <option value={"10"}>10만원대</option>
+            <option value={"15"}>15만원대</option>
+            <option value={"20"}>20만원대</option>
+          </select>
         </span>
       </div>
       <div className="Q">

@@ -101,6 +101,16 @@ button:hover {
   width: 8rem;
   height: 2rem;
   margin-right: 0.7rem;
+  font-family: "sunflowerL";
+  font-size: 1.1rem;
+  border: 0.09rem solid black;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+.price select{
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1.5rem;
   padding: 0.2rem;
   font-family: "sunflowerL";
   font-size: 1.1rem;
@@ -108,21 +118,6 @@ button:hover {
   border-radius: 0.2rem;
   text-align: center;
 }
-
-.car button {
-  background-size: 90%;
-}
-/* .car button:nth-child(1) {
-  background-image: url("./assests/car.png");
-}
-.car button:nth-child(2) {
-  background-image: url("./assests/bus.png");
-} */
-.car button.selected {
-  background-color: rgba(255, 255, 255, 0.6);
-  background-image: url("./assests/한라산.png");
-}
-
 .theme button {
   background-size: 80%;
 }
@@ -154,38 +149,6 @@ button:hover {
 .with button.selected {
   background-image: url("./assests/한라봉.png");
 }
-/* .with button:nth-child(1) {
-  background-size: cover;
-  background-image: url("./assests/parents.png");
-  background-position: center 0.2rem;
-}
-.with button:nth-child(1).selected {
-  background-image: url("./assests/parentsColor.png");
-}
-.with button:nth-child(2) {
-  background-image: url("./assests/children.png");
-  background-position: center 0.4rem;
-}
-.with button:nth-child(2).selected {
-  background-image: url("./assests/childrenColor.png");
-}
-.with button:nth-child(3) {
-  background-size: 85%;
-  background-image: url("./assests/couple.png");
-  background-position: center 0.2rem;
-}
-.with button:nth-child(3).selected {
-  background-image: url("./assests/coupleColor.png");
-}
-.with button:nth-child(4) {
-  background-size: 85%;
-  background-image: url("./assests/friendship.png");
-  background-position: center;
-}
-.with button:nth-child(4).selected {
-  background-image: url("./assests/friendshipColor.png");
-} */
-
 #result {
   width: auto;
   margin-top: 5rem;
