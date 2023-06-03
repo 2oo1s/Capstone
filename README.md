@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Trip To Jeju
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+사용자가 예정된 여행에 대한 간단한 정보를 선택하면 그에 맞는 제주도 여행 경로 3가지를 추천해주는 프로그램입니다.
 
-## Available Scripts
+## 화면 구성
 
-In the project directory, you can run:
+메인 화면, 정보 선택 화면, 추천된 3가지 여행 경로를 요약해서 보여주는 화면, 3가지 중 선택된 경로에 대한 전체 경로를 보여주는 화면 -> 4페이지로 이루어져 있습니다.
 
-### `npm start`
+#### `Home page`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![main](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/ded27dd5-0c89-43a8-8b09-e7ca71736d87)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### `CheckInfo page`
 
-### `npm test`
+![localhost_3000_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/01265152-2756-4f05-a301-50d09e65bb49)|![localhost_3000_checkinfo (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/af3b47e2-c637-47f2-94c3-2af9e9954424)
+--- | --- | 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+좌측 사진은 정보 선택 전 화면, 우측 사진은 정보 선택 후 화면입니다.
 
-### `npm run build`
+#### `ShowOptions page`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![localhost_3000_options](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/ba9d7103-0947-4869-becc-faeb84b01643)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+추천된 3가지 여행 경로를 요약해서 보여줍니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### `DetailRoute page`
 
-### `npm run eject`
+![localhost_3000_details (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/00bc80df-3841-4788-aa9d-67e24730a9e1)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 구현 중인 페이지입니다. -
