@@ -128,15 +128,9 @@ button:hover {
 .location button {
   background-size: 49%;
 }
-.location button:nth-child(1) {
-  background-image: url("./assests/jejuE.png");
-}
 .location button:nth-child(1).selected {
   background-image: url("./assests/jejuEColor.png");
   background-color: rgba(255, 255, 255, 0.85);
-}
-.location button:nth-child(2) {
-  background-image: url("./assests/jejuW.png");
 }
 .location button:nth-child(2).selected {
   background-image: url("./assests/jejuWColor.png");

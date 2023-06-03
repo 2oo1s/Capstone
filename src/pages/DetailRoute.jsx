@@ -10,7 +10,8 @@ function DetailRoute() {
   const navigate = useNavigate();
   const location = useLocation();
   const duration = location.state.duration;
-  const selectedData = location.state.selectedData;
+  const finalData = location.state.finalData;
+
   const [selectedDay, setSelectedDay] = useState(1);
 
   let durationStr;
@@ -24,18 +25,18 @@ function DetailRoute() {
 
   const data = useMemo(
     () => [
-      { text: selectedData.startDate, value: 50 },
+      { text: finalData.startDate, value: 50 },
       { text: durationStr, value: 400 },
-      { text: selectedData.location, value: 300 },
-      { text: selectedData.with, value: 600 },
-      ...selectedData.themes.map((theme) => ({ text: theme, value: 3000 })),
+      { text: finalData.location, value: 300 },
+      { text: finalData.with, value: 600 },
+      ...finalData.themes.map((theme) => ({ text: theme, value: 3000 })),
     ],
     [
-      selectedData.startDate,
+      finalData.startDate,
       durationStr,
-      selectedData.location,
-      selectedData.with,
-      selectedData.themes,
+      finalData.location,
+      finalData.with,
+      finalData.themes,
     ]
   );
 

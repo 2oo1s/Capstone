@@ -2,7 +2,8 @@
   height: auto;
   font-family: "sunflowerL";
 }
-#back, #next{
+#back,
+#next {
   height: 2.5rem;
   width: 3.5rem;
 
@@ -57,7 +58,6 @@ p {
   border-radius: 0.2rem;
   width: 22vw;
   height: 18rem;
-
   display: flex;
   flex-direction: column;
 }
@@ -70,16 +70,24 @@ p {
   align-items: center;
 }
 #image {
-  width: 7rem;
+  margin-left: 0.5vw;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#image button {
-  margin: 0;
-  margin-left: 0.8vw;
-  width: 5rem;
+#image img {
+  height: 5.2rem;
+  width: 9vw;
+  border: 0.5px solid rgba(145, 145, 145, 0.657);
 }
+
 #name {
   width: 13vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.3rem;
+  font-family: "sunflowerL";
+  text-align: center;
 }

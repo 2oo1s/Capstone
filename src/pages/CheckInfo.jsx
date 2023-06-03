@@ -16,11 +16,11 @@ function CheckInfo() {
   const [selectedData, setSelectedData] = useState({
     startDate: null,
     endDate: null,
-    times: { start: null, end: null },
-    price: null,
+    times: { start: "아침", end: "18-20시" },
+    price: "5",
     themes: [],
-    location: null,
     with: null,
+    location: null,
   });
 
   const handleDateChange = (dates) => {
@@ -98,7 +98,20 @@ function CheckInfo() {
   const duration =
     differenceInDays(selectedData.endDate, selectedData.startDate) + 1;
 
-  const checkValidity = () => {
+  const finalData = {
+    ...selectedData,
+    startDate: startDateString,
+    endDate: endDateString,
+  };
+
+  // 선택 정보 Json 형식으로 변환
+  const jsonData = JSON.stringify({
+    ...selectedData,
+    startDate: startDateString,
+    endDate: endDateString,
+  });
+
+  const checkValidity = async () => {
     if (
       selectedData.startDate === null ||
       selectedData.times.start === null ||
@@ -125,25 +138,31 @@ function CheckInfo() {
       }
       alert(`' ${emptyData.join(", ")} '을(를) 선택해주세요!`);
     } else {
-      navigate("/options", {
-        state: {
-          duration: duration,
-          selectedData: selectedDataJson,
-        },
-      });
+      try {
+        // POST 요청 보내기
+        const response = await axios.post(
+          "http://13.209.235.204:8000/plan_preview/",
+          jsonData
+        );
+
+        // POST 요청에 대한 response -> ((여행기간 * 3) * 3)개의 kakaoId
+        console.log(response.data);
+        navigate("/options", {
+          state: {
+            duration: duration,
+            finalData: finalData,
+            responseData: response.data,
+          },
+        });
+      } catch (error) {
+        console.error(error);
+      }
     }
   };
 
-  // 이후 서버랑 연결할 때, 필요 // // // //
-  const selectedDataJson = {
-    ...selectedData,
-    startDate: startDateString,
-    endDate: endDateString,
-  };
-
-  // 결과 확인용 지울 것! // // // //
-  console.log(selectedDataJson);
-  // ! // ! // ! // ! // ! // ! //
+  // //  결과 확인용 지울 것! // //
+  console.log(jsonData);
+  // // // // // // // // // //
 
   return (
     <div className="CheckInfo">
@@ -159,7 +178,6 @@ function CheckInfo() {
           locale={ko}
           dateFormat="yyyy.MM.dd"
           minDate={today}
-          // maxDate={addMonths(new Date(), 1)}
           selected={selectedData.startDate}
           onChange={handleDateChange}
           startDate={selectedData.startDate}

@@ -7,19 +7,17 @@ function ShowOptions() {
   const navigate = useNavigate();
   const location = useLocation();
   const duration = location.state.duration;
-  const selectedData = location.state.selectedData;
+  const finalData = location.state.finalData;
+  const responseData = location.state.responseData;
 
   const [selectedOption, setSelectedOption] = useState(null);
+
   const handleCheckboxChange = (label) => {
     setSelectedOption(label);
     navigate("/details", {
-      state: { duration: duration, selectedData: selectedData },
+      state: { duration: duration, finalData: finalData },
     });
   };
-
-  // 지울 것! // // // // // // // // /
-  console.log("duration:", duration);
-  // // // // // // // // // // // //
 
   return (
     <div className="ShowOptions">
@@ -32,6 +30,7 @@ function ShowOptions() {
       <div className="container">
         <div className="section">
           <Option
+            placeArray={responseData.plan[0]}
             duration={duration}
             label="선택 1"
             checked={selectedOption === "선택 1"}
@@ -40,6 +39,7 @@ function ShowOptions() {
         </div>
         <div className="section" id="mid">
           <Option
+            placeArray={responseData.plan[1]}
             duration={duration}
             label="선택 2"
             checked={selectedOption === "선택 2"}
@@ -48,6 +48,7 @@ function ShowOptions() {
         </div>
         <div className="section">
           <Option
+            placeArray={responseData.plan[2]}
             duration={duration}
             label="선택 3"
             checked={selectedOption === "선택 3"}
