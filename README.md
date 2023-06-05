@@ -22,7 +22,7 @@
 
 #### `ShowOptions page`
 
-![localhost_3000_options](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/ba9d7103-0947-4869-becc-faeb84b01643)
+![localhost_3000_options](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/aec3f649-021a-4db6-b788-a9501d8e8890)
 
 추천된 3가지 여행 경로를 요약해서 보여줍니다.
 <br/>
