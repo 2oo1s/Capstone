@@ -107,7 +107,7 @@ button:hover {
   border-radius: 0.2rem;
   text-align: center;
 }
-.price select{
+.price select {
   width: 8rem;
   height: 2rem;
   margin-top: 1.5rem;
@@ -124,7 +124,11 @@ button:hover {
 .theme button.selected {
   background-image: url("./assests/돌하르방.png");
 }
-
+.button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .location button {
   background-size: 49%;
 }

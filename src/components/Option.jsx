@@ -2,6 +2,7 @@ import React from "react";
 import Place from "./Place";
 
 function Option(props) {
+  console.log(props)
   return (
     <div>
       <div className="check">
@@ -18,45 +19,45 @@ function Option(props) {
           <>
             <p>Day 1</p>
             <div className="summary">
-              <Place kakaoId={props.placeArray[0]} />
-              <Place kakaoId={props.placeArray[1]} />
-              <Place kakaoId={props.placeArray[2]} />
+              <Place placeData={props.responseData.day1_preview[0]} />
+              <Place placeData={props.responseData.day1_preview[1]} />
+              <Place placeData={props.responseData.day1_preview[2]} />
             </div>
           </>
         ) : props.duration === 2 ? (
           <>
             <p>Day 1</p>
             <div className="summary">
-              <Place kakaoId={props.placeArray[0]} />
-              <Place kakaoId={props.placeArray[1]} />
-              <Place kakaoId={props.placeArray[2]} />
+              <Place placeData={props.responseData.day1_preview[0]} />
+              <Place placeData={props.responseData.day1_preview[1]} />
+              <Place placeData={props.responseData.day1_preview[2]} />
             </div>
             <p>Day 2</p>
             <div className="summary">
-              <Place kakaoId={props.placeArray[3]} />
-              <Place kakaoId={props.placeArray[4]} />
-              <Place kakaoId={props.placeArray[5]} />
+              <Place placeData={props.responseData.day2_preview[0]} />
+              <Place placeData={props.responseData.day2_preview[1]} />
+              <Place placeData={props.responseData.day2_preview[2]} />
             </div>
           </>
         ) : (
           <>
             <p>Day 1</p>
             <div className="summary">
-              <Place kakaoId={props.placeArray[0]} />
-              <Place kakaoId={props.placeArray[1]} />
-              <Place kakaoId={props.placeArray[2]} />
+              <Place placeData={props.responseData.day1_preview[0]} />
+              <Place placeData={props.responseData.day1_preview[1]} />
+              <Place placeData={props.responseData.day1_preview[2]} />
             </div>
             <p>Day 2</p>
             <div className="summary">
-              <Place kakaoId={props.placeArray[3]} />
-              <Place kakaoId={props.placeArray[4]} />
-              <Place kakaoId={props.placeArray[5]} />
+              <Place placeData={props.responseData.day2_preview[0]} />
+              <Place placeData={props.responseData.day2_preview[1]} />
+              <Place placeData={props.responseData.day2_preview[2]} />
             </div>
             <p>Day 3</p>
             <div className="summary">
-              <Place kakaoId={props.placeArray[6]} />
-              <Place kakaoId={props.placeArray[7]} />
-              <Place kakaoId={props.placeArray[8]} />
+              <Place placeData={props.responseData.day3_preview[0]} />
+              <Place placeData={props.responseData.day3_preview[1]} />
+              <Place placeData={props.responseData.day3_preview[2]} />
             </div>
           </>
         )}

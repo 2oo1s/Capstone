@@ -1,3 +1,5 @@
+import PlaceWithBtn from "./PlaceWithBtn";
+
 function Route(props) {
   const { selectedDay } = props;
 
@@ -5,8 +7,9 @@ function Route(props) {
   const renderRouteContent = () => {
     if (selectedDay === 1) {
       return (
-        <div>
-          <div className="showDay">Day 1의 경로</div>
+        <div className="allRoute">
+          <div id="showDay">Day 1의 경로</div>
+          <PlaceWithBtn></PlaceWithBtn>
         </div>
       );
     } else if (selectedDay === 2) {

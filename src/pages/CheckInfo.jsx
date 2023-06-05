@@ -141,12 +141,11 @@ function CheckInfo() {
       try {
         // POST 요청 보내기
         const response = await axios.post(
-          "http://13.209.235.204:8000/plan_preview/",
+          "http://13.209.235.204:8000/plan/",
           jsonData
         );
 
         // POST 요청에 대한 response -> ((여행기간 * 3) * 3)개의 kakaoId
-        console.log(response.data);
         navigate("/options", {
           state: {
             duration: duration,
@@ -232,19 +231,19 @@ function CheckInfo() {
             }
             onClick={() => handleThemeSelect("액티비티")}
           >
-            액티비티
+            <span className="button-text">액티비티</span>
           </button>
           <button
             className={selectedData.themes.includes("자연") ? "selected" : ""}
             onClick={() => handleThemeSelect("자연")}
           >
-            자연
+            <span className="button-text">자연</span>
           </button>
           <button
             className={selectedData.themes.includes("체험") ? "selected" : ""}
             onClick={() => handleThemeSelect("체험")}
           >
-            체험
+            <span className="button-text">체험</span>
           </button>
           <br />
           <button
@@ -253,19 +252,19 @@ function CheckInfo() {
             }
             onClick={() => handleThemeSelect("포토스팟")}
           >
-            포토스팟
+            <span className="button-text">포토스팟</span>
           </button>
           <button
             className={selectedData.themes.includes("해변") ? "selected" : ""}
             onClick={() => handleThemeSelect("해변")}
           >
-            해변
+            <span className="button-text">해변</span>
           </button>
           <button
             className={selectedData.themes.includes("휴식") ? "selected" : ""}
             onClick={() => handleThemeSelect("휴식")}
           >
-            휴식
+            <span className="button-text">휴식</span>
           </button>
         </span>
       </div>
