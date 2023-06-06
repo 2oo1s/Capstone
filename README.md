@@ -21,7 +21,9 @@
 좌측 사진은 정보 선택 전 화면, 우측 사진은 정보 선택 후 화면입니다.
 
 ### `ShowOptions page`
-![localhost_3002_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/645acea9-5972-49fe-ab03-b19b5c4bfd46)
+
+![localhost_3002_checkinfo (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/ab74fe05-0f30-4d83-be25-03a034c125c7)
+
 
 추천된 3가지 여행 경로를 요약해서 보여줍니다.
 <br/>
