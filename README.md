@@ -15,13 +15,13 @@
 
 ### `CheckInfo page`
 
-![localhost_3000_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/01265152-2756-4f05-a301-50d09e65bb49)|![localhost_3000_checkinfo (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/af3b47e2-c637-47f2-94c3-2af9e9954424)
+![localhost_3000_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/01265152-2756-4f05-a301-50d09e65bb49)|![localhost_3002_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/3bd4f8e4-8905-4049-8f70-15a98fea962a)
 --- | --- | 
 
 좌측 사진은 정보 선택 전 화면, 우측 사진은 정보 선택 후 화면입니다.
 
 ### `ShowOptions page`
-![localhost_3000_options](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/af6d877b-0d05-47be-89be-0c4389455175)
+![localhost_3002_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/645acea9-5972-49fe-ab03-b19b5c4bfd46)
 
 추천된 3가지 여행 경로를 요약해서 보여줍니다.
 <br/>
@@ -30,7 +30,7 @@
 
 ### `DetailRoute page`
 
-![localhost_3000_details (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/00bc80df-3841-4788-aa9d-67e24730a9e1)
+![localhost_3002_details (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/d4c46a0b-85b8-47f4-9298-7a4fc58c2b3c)
 
 *** 현재 구현 중인 페이지입니다 ***
 <br/>
