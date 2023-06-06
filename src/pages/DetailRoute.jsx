@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, Component } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import WordCloud from "react-d3-cloud";
+import KakaoMap from "../components/KakaoMap";
 import Map from "../components/Map";
 import DayBtn from "../components/DayBtn";
 import Route from "../components/Route";
@@ -77,10 +78,19 @@ function DetailRoute() {
           </div>
         </div>
         <div id="right">
-          {/* <KakaoMap /> */}
-          {selectedDay === 1 && <Map option={option} day={0} />}
+          {selectedDay === 1 && (
+            <KakaoMap responseData={responseData.day1_items} />
+          )}
+          {selectedDay === 2 && (
+            <KakaoMap responseData={responseData.day2_items} />
+          )}
+          {selectedDay === 3 && (
+            <KakaoMap responseData={responseData.day3_items} />
+          )}
+
+          {/* {selectedDay === 1 && <Map option={option} day={0} />}
           {selectedDay === 2 && <Map option={option} day={1} />}
-          {selectedDay === 3 && <Map option={option} day={2} />}
+          {selectedDay === 3 && <Map option={option} day={2} />} */}
         </div>
       </div>
     </div>

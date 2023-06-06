@@ -94,9 +94,8 @@ svg {
   position: relative;
 }
 #map {
-  position: absolute;
   width: 55vw;
-  height: 31rem;
+  height: 38rem;
 }
 /* Route.jsx에 대한 부분 */
 .Route {
@@ -114,7 +113,7 @@ svg {
 .PlaceWithBtn {
   border: 1px solid #e2e2e2;
   border-radius: 0.3rem;
-  width: 19vw;
+  width: 20vw;
   height: 8vw;
   margin-top: 0.4rem;
   display: flex;
@@ -124,31 +123,32 @@ svg {
 .leftImg {
   width: 8vw;
   margin: 0;
+  margin-left: 0.3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 .leftImg img {
   width: 8vw;
-  height: 6.5rem;
+  height: 6.3rem;
   border: 1px solid #e2e2e2;
-  margin-left: 0.3rem;
 }
 .right {
-  width: 10vw;
+  width: 11vw;
   height: 6.5rem;
 }
 .modifyBtn {
-  width: 9.2rem;
+  width: 11vw;
   display: flex;
   justify-content: end;
   margin-bottom: 0.3rem;
+  margin-top: 0.1rem;
 }
 #recommend,
 #delete {
-  width: 2.8rem;
-  height: 1.3rem;
-  font-size: 0.7rem;
+  width: 2.5rem;
+  height: 1.2rem;
+  font-size: 0.6rem;
   margin-top: 0rem;
   margin-left: 0;
   margin-right: 0;
@@ -156,26 +156,27 @@ svg {
   border-radius: 0.3rem;
 }
 #recommend {
-  margin-right: 0.2rem;
+  margin-right: 0.2vw;
 }
 #pName {
-  margin-left: 1rem;
+  margin-left: 0.7rem;
   margin-bottom: 0.2rem;
   height: 1.4rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 #pStar {
-  margin-left: 1rem;
-  height: 1.2rem;
-  font-size: 0.75rem;
+  margin-left: 0.7rem;
+  margin-bottom: 0.2rem;
+  height: 1.1rem;
+  font-size: 0.8rem;
 }
 #pAddress {
-  margin-left: 1rem;
-  height: 2rem;
-  width: 8rem;
+  margin-left: 0.7rem;
+  height: 1.9rem;
+  width: 8.8rem;
   font-size: 0.7rem;
   text-overflow: ellipsis;
   overflow: hidden;
