@@ -2,7 +2,6 @@ import React from "react";
 import Place from "./Place";
 
 function Option(props) {
-  console.log(props)
   return (
     <div>
       <div className="check">

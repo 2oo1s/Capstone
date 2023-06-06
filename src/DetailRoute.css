@@ -9,18 +9,30 @@
 }
 #left {
   width: 22vw;
-  height: 31rem;
+  height: 38rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#lTop{
+#lastBack {
+  margin: 0;
+  height: 2rem;
+  width: 2.1rem;
+  font-size: 1rem;
+  padding: 0;
+  margin-top: 0.5rem;
+  flex-direction: start;
+}
+#lTop {
+  display: flex;
+  flex-direction: row;
+  width: 19rem;
   @media (max-width: 1012px) {
-    .DayBtn button{
-      font-size: 0.9rem;
+    .DayBtn button {
+      font-size: 0.8rem;
       margin: 0rem 0.2rem 0.5rem 0.2rem;
     }
-    #three{
+    #three {
       width: 5vw;
     }
   }
@@ -28,24 +40,28 @@
 .DayBtn button {
   height: 2rem;
   font-size: 1.1rem;
-  margin: 0rem 0.5rem 0.5rem 0.6rem;
+  margin: 0.5rem 0.5rem 0.3rem 0.6rem;
   border-radius: 0;
   border: none;
   padding: 0rem;
 }
+.DayBtn button.selected {
+  text-decoration: underline;
+}
+
 #one {
   width: 11vw;
 }
 #two {
-  width: 9vw;
+  width: 7vw;
 }
 #three {
-  width: 5vw;
+  width: 4vw;
 }
 #lMiddle {
   border-top: 1.2px solid #e2e2e2;
   border-bottom: 1.2px solid #e2e2e2;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   width: 80%;
 }
 #lMiddle text {
@@ -53,7 +69,7 @@
   font-family: "sunflowerL";
   font-size: 1.3rem;
 }
-.wordcloud{
+.wordcloud {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,30 +81,29 @@ svg {
   justify-content: center;
   align-items: center;
 }
-#showDay{
-  margin-bottom: 0.8rem;
+#lDown {
+  overflow: auto;
 }
 #right {
   margin-top: 1rem;
-  width: 58vw;
+  height: 38rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-left: 1.2px solid #e2e2e2;
+  position: relative;
 }
 #map {
-  margin-top: 0rem;
+  position: absolute;
   width: 55vw;
   height: 31rem;
-  border: 0.05rem solid rgba(0, 0, 0, 0.148);
 }
-
 /* Route.jsx에 대한 부분 */
-.Route{
+.Route {
   font-family: "sunflowerL";
   margin-top: 0.5rem;
 }
-.allRoute{
+.allRoute {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,11 +111,72 @@ svg {
 }
 
 /* PlaceWithBtn.jsx에 대한 부분 */
-.PlaceWithBtn{
+.PlaceWithBtn {
   border: 1px solid #e2e2e2;
+  border-radius: 0.3rem;
+  width: 19vw;
+  height: 8vw;
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#modify, #delete{
-  width: 3rem;
+.leftImg {
+  width: 8vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftImg img {
+  width: 8vw;
+  height: 6.5rem;
+  border: 1px solid #e2e2e2;
+  margin-left: 0.3rem;
+}
+.right {
+  width: 10vw;
+  height: 6.5rem;
+}
+.modifyBtn {
+  width: 9.2rem;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 0.3rem;
+}
+#recommend,
+#delete {
+  width: 2.8rem;
+  height: 1.3rem;
+  font-size: 0.7rem;
+  margin-top: 0rem;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.3rem;
+}
+#recommend {
+  margin-right: 0.2rem;
+}
+#pName {
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+  height: 1.4rem;
+  font-size: 1.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#pStar {
+  margin-left: 1rem;
+  height: 1.2rem;
+  font-size: 0.75rem;
+}
+#pAddress {
+  margin-left: 1rem;
   height: 2rem;
-  font-size: 0.8rem;
+  width: 8rem;
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

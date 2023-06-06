@@ -12,12 +12,19 @@ function ShowOptions() {
 
   const [selectedOption, setSelectedOption] = useState(null);
 
-  const handleCheckboxChange = (label) => {
+  const handleCheckboxChange = (label, responseData, option) => {
     setSelectedOption(label);
     navigate("/details", {
-      state: { duration: duration, finalData: finalData, responseData:responseData },
+      state: {
+        duration: duration,
+        finalData: finalData,
+        responseData: responseData,
+        option: option,
+      },
     });
   };
+
+  console.log(responseData);
 
   return (
     <div className="ShowOptions">
@@ -34,7 +41,9 @@ function ShowOptions() {
             duration={duration}
             label="선택 1"
             checked={selectedOption === "선택 1"}
-            onChange={handleCheckboxChange}
+            onChange={(label) =>
+              handleCheckboxChange(label, responseData[0], 0)
+            }
           />
         </div>
         <div className="section" id="mid">
@@ -43,7 +52,9 @@ function ShowOptions() {
             duration={duration}
             label="선택 2"
             checked={selectedOption === "선택 2"}
-            onChange={handleCheckboxChange}
+            onChange={(label) =>
+              handleCheckboxChange(label, responseData[1], 1)
+            }
           />
         </div>
         <div className="section">
@@ -52,7 +63,9 @@ function ShowOptions() {
             duration={duration}
             label="선택 3"
             checked={selectedOption === "선택 3"}
-            onChange={handleCheckboxChange}
+            onChange={(label) =>
+              handleCheckboxChange(label, responseData[2], 2)
+            }
           />
         </div>
       </div>

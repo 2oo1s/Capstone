@@ -2,8 +2,7 @@
   height: auto;
   font-family: "sunflowerL";
 }
-#back,
-#next {
+#back {
   height: 2.5rem;
   width: 3.5rem;
 
@@ -57,7 +56,7 @@ p {
 .summary {
   background-color: #e2e2e260;
   border: 1px solid #e2e2e2;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   width: 22vw;
   height: 18rem;
   display: flex;
@@ -81,6 +80,11 @@ p {
 #image img {
   height: 5.2rem;
   width: 9vw;
+  border: 1px solid #e2e2e2;
+}
+#right{
+  display: flex;
+  flex-direction: row;
 }
 .placeinfo {
   padding-left: 0;
