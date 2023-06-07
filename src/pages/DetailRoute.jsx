@@ -79,13 +79,13 @@ function DetailRoute() {
         </div>
         <div id="right">
           {selectedDay === 1 && (
-            <KakaoMap responseData={responseData.day1_items} />
+            <KakaoMap routeData={responseData.day1} placeData={responseData.day1_items}/>
           )}
           {selectedDay === 2 && (
-            <KakaoMap responseData={responseData.day2_items} />
+            <KakaoMap routeData={responseData.day2} placeData={responseData.day2_items} />
           )}
           {selectedDay === 3 && (
-            <KakaoMap responseData={responseData.day3_items} />
+            <KakaoMap routeData={responseData.day3} placeData={responseData.day3_items} />
           )}
 
           {/* {selectedDay === 1 && <Map option={option} day={0} />}
