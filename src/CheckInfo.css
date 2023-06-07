@@ -122,7 +122,7 @@ button:hover {
   background-size: 80%;
 }
 .theme button.selected {
-  background-image: url("./assests/돌하르방.png");
+  background-image: url("./assests/dolhareubang.png");
 }
 .button-text {
   display: flex;
@@ -145,7 +145,7 @@ button:hover {
   background-size: 90%;
 }
 .with button.selected {
-  background-image: url("./assests/한라봉.png");
+  background-image: url("./assests/hallabong.png");
 }
 #result {
   width: auto;
