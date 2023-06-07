@@ -15,15 +15,14 @@
 
 ### `CheckInfo page`
 
-![localhost_3000_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/01265152-2756-4f05-a301-50d09e65bb49)|![localhost_3002_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/3bd4f8e4-8905-4049-8f70-15a98fea962a)
+![localhost_3000_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/01265152-2756-4f05-a301-50d09e65bb49)|![localhost_3000_checkinfo](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/00f4201c-c984-4b0b-909f-4975f35cb8bd)
 --- | --- | 
 
 좌측 사진은 정보 선택 전 화면, 우측 사진은 정보 선택 후 화면입니다.
 
 ### `ShowOptions page`
 
-![localhost_3002_checkinfo (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/ab74fe05-0f30-4d83-be25-03a034c125c7)
-
+![localhost_3000_details (2)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/e66d8ad0-857f-41a3-81b8-164c56469aba)
 
 추천된 3가지 여행 경로를 요약해서 보여줍니다.
 <br/>
@@ -32,13 +31,13 @@
 
 ### `DetailRoute page`
 
-![localhost_3002_details (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/d4c46a0b-85b8-47f4-9298-7a4fc58c2b3c)
+![localhost_3000_details (1)](https://github.com/2oo1s/Capstone-TripToJeju-Frontend/assets/90839206/c465ebbd-e5c5-42f8-a897-f43296eaa1e9)
 
 *** 현재 구현 중인 페이지입니다 ***
 <br/>
 
 좌측 상단에는 날짜별로 일정을 확인할 수 있는 버튼이 있고, 중앙에는 예정된 여행에 대한 키워드가, 하단에는 날짜별 전체 일정이 보여집니다.
 <br/>
-
-사용자가 버튼을 눌렀을 때, 특정 장소를 대체할 장소를 재추천 받거나 삭제할 수 있도록 구현할 예정이며,
-우측에는 kakaomap api를 사용하여 불러온 지도 위에 경로를 마커로 표시하여 사용자에게 제공할 예정입니다.
+우측에는 kakaomap api를 사용하여 불러온 지도 위에 마커와 이동경로를 표시하여 사용자에게 경로를 가시적으로 제공합니다.
+<br/>
+사용자가 버튼을 눌렀을 때, 특정 장소를 대체할 장소를 재추천 받거나 삭제할 수 있도록 구현할 예정입니다.
