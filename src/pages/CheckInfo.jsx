@@ -141,6 +141,7 @@ function CheckInfo() {
       alert(`' ${emptyData.join(", ")} '을(를) 선택해주세요!`);
     } else {
       try {
+        setIsLoading(true);
         // POST 요청 보내기
         const response = await axios.post(
           "http://3.37.27.117:8000/plan/",
@@ -148,6 +149,7 @@ function CheckInfo() {
         );
 
         // POST 요청에 대한 response -> ((여행기간 * 3) * 3)개의 kakaoId
+        
         navigate("/options", {
           state: {
             duration: duration,

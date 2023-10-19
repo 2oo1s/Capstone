@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import "../css/Home.css";
 import "../fonts/fonts.css";
+import Loading from "../components/Loading";
 
 function Home() {
   const navigate = useNavigate();
@@ -34,25 +35,6 @@ function Home() {
       >
         정보 선택하러 가기
       </button>
-      {/* <button
-        id="start"
-        onClick={() => {
-          navigate("/login");
-        }}
-      >
-        로그인
-      </button>
-      <div className="member">
-        <button id="join">회원가입</button>
-        <button
-          id="nonmember"
-          onClick={() => {
-            navigate("/checkinfo");
-          }}
-        >
-          비회원
-        </button>
-      </div> */}
     </div>
   );
 }
