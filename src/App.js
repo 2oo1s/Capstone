@@ -1,7 +1,8 @@
-import "./App.css";
+import "./css/App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import CheckInfo from "./pages/CheckInfo";
 import ShowOptions from "./pages/ShowOptions";
 import DetailRoute from "./pages/DetailRoute";
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="/checkinfo" element={<CheckInfo />}></Route>
           <Route path="/options" element={<ShowOptions />}></Route>
           <Route path="/details" element={<DetailRoute />}></Route>

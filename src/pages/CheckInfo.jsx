@@ -4,13 +4,16 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ko } from "date-fns/esm/locale";
 import { addDays, differenceInDays } from "date-fns";
-import "../CheckInfo.css";
-import "../Calendar.css";
+import "../css/CheckInfo.css";
+import "../css/Calendar.css";
+import Loading from "../components/Loading";
+
 import axios from "axios";
 
 function CheckInfo() {
   const navigate = useNavigate();
   const today = new Date();
+  const [isLoading, setIsLoading] = useState(false);
 
   // 선택된 정보 저장
   const [selectedData, setSelectedData] = useState({
@@ -20,7 +23,7 @@ function CheckInfo() {
     price: "5",
     themes: [],
     with: null,
-    location: null,
+    // location: null,
   });
 
   const handleDateChange = (dates) => {
@@ -53,9 +56,9 @@ function CheckInfo() {
     handleSelect("price", e.target.value);
   };
 
-  const handleLocationSelect = (index) => {
-    handleSelect("location", index === selectedData.location ? null : index);
-  };
+  // const handleLocationSelect = (index) => {
+  //   handleSelect("location", index === selectedData.location ? null : index);
+  // };
 
   const handleWithSelect = (index) => {
     handleSelect("with", index === selectedData.with ? null : index);
@@ -120,7 +123,6 @@ function CheckInfo() {
       selectedData.themes.length === 0
     ) {
       const emptyData = [];
-
       if (selectedData.startDate === null || selectedData.endDate === null) {
         emptyData.push("여행일자");
       }
@@ -141,7 +143,7 @@ function CheckInfo() {
       try {
         // POST 요청 보내기
         const response = await axios.post(
-          "http://13.209.235.204:8000/plan/",
+          "http://3.37.27.117:8000/plan/",
           jsonData
         );
 
@@ -165,6 +167,7 @@ function CheckInfo() {
 
   return (
     <div className="CheckInfo">
+      {isLoading && <Loading />}
       <div className="about">
         <button id="back" onClick={() => navigate(-1)}>
           {`<`}
@@ -297,7 +300,7 @@ function CheckInfo() {
           </button>
         </span>
       </div>
-      <div className="Q">
+      {/* <div className="Q">
         <text>6. 선호하는 여행 지역을 선택해주세요. (필수 X)</text>
         <span className="location">
           <button
@@ -313,7 +316,7 @@ function CheckInfo() {
             동 부
           </button>
         </span>
-      </div>
+      </div> */}
       <button id="result" onClick={checkValidity}>
         추천된 경로 보기
       </button>

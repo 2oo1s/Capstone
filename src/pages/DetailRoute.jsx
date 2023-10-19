@@ -5,7 +5,7 @@ import KakaoMap from "../components/KakaoMap";
 import Map from "../components/Map";
 import DayBtn from "../components/DayBtn";
 import Route from "../components/Route";
-import "../DetailRoute.css";
+import "../css/DetailRoute.css";
 
 function DetailRoute() {
   const navigate = useNavigate();

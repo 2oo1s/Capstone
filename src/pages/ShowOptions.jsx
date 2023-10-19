@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
-import "../ShowOptions.css";
+import "../css/ShowOptions.css";
 import Option from "../components/Option";
 
 function ShowOptions() {
